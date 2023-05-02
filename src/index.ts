@@ -1,5 +1,6 @@
 import { Document } from "langchain/document";
-import { LLMChain, PromptTemplate } from 'langchain';
+import { LLMChain } from 'langchain/chains';
+import { PromptTemplate } from 'langchain/prompts';
 import { OpenAI } from "langchain/llms/openai";
 import { HNSWLib } from "langchain/vectorstores/hnswlib";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
