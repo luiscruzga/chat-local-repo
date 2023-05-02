@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { Document } from "langchain/document";
 import { LLMChain } from 'langchain/chains';
 import { PromptTemplate } from 'langchain/prompts';
