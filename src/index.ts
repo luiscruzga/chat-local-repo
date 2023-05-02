@@ -12,8 +12,8 @@ import inquirer from 'inquirer';
 import { glob } from 'glob';
 dotenv.config();
 const VECTOR_STORE_NAME = 'vectorStore';
-const SYSTEM_EXCLUDE_FOLDERS = 'node_modules, vectorStore';
-const SYSTEM_EXCLUDE_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.ico', '.svg', '.webp', '.mp3', '.wav'];
+const SYSTEM_EXCLUDE_FOLDERS = 'node_modules, vectorStore, bin, build, coverage, k8s';
+const SYSTEM_EXCLUDE_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.ico', '.svg', '.webp', '.mp3', '.wav', '.doc', '.docx', '.xlsx', '.ppt', '.pptx'];
 const SYSTEM_EXCLUDE_FILES = ['package-lock.json'];
 let store, llmChain;
 const generateResponse = async (history: string[], query: string, language: string) => {
