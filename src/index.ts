@@ -221,7 +221,8 @@ const main = async () => {
       const allExcludedFiles = [...SYSTEM_EXCLUDE_FILES, ...excludedFiles.split(',').map(el => el.trim())];
       training(allExcludedFolders, allExcludedExtensions, allExcludedFiles);
     } else {
-      chatWithRepo(answers.language);
+      const language = answers.language !== '' ? answers.language : 'english';
+      chatWithRepo(language);
     }
   });
 }
